@@ -5,6 +5,8 @@ class PessoasController < ApplicationController
   # GET /pessoas.json
   def index
     @pessoas = Pessoa.paginate(:page => params[:page])
+
+    # respond_to js?
   end
 
   # GET /pessoas/1
